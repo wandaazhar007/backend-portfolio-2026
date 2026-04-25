@@ -8,14 +8,27 @@ import { notFoundMiddleware } from "./middlewares/notFoundMiddleware.js";
 export function createApp() {
   const app = express();
 
+  const allowedOrigins = [
+    env.FRONTEND_URL,
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://wandaazhar.vercel.app",
+    "https://portfolio.birojasa-sahabat.com"
+  ].filter(Boolean);
+
   app.use(
     cors({
-      origin: [env.FRONTEND_URL,
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
-        "https://wandaazhar.vercel.app"
-      ],
+      origin(origin, callback) {
+        if (!origin) {
+          return callback(null, true);
+        }
 
+        if (allowedOrigins.includes(origin)) {
+          return callback(null, true);
+        }
+
+        return callback(new Error(`CORS blocked for origin: ${origin}`));
+      },
       credentials: true
     })
   );
