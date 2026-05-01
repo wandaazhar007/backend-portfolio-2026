@@ -1,3 +1,4 @@
+//src/modules/blogs/blogs.repository.ts
 import { db, firestoreAdmin } from "../../config/firebaseAdmin.js";
 import { COLLECTIONS } from "../../constants/collections.js";
 import type { Blog } from "../../types/blog.js";

@@ -1,3 +1,4 @@
+//app/src/modules/uploads/uploads.routes.ts
 import { Router } from "express";
 import { asyncHandler } from "../../lib/asyncHandler.js";
 import { uploadsController } from "./uploads.controller.js";

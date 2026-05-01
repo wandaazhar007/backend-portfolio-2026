@@ -1,3 +1,4 @@
+//src/modules/blogs/blogs.schema.ts
 import { z } from "zod";
 
 export const createBlogSchema = z.object({

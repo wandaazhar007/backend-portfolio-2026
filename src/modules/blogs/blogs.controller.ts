@@ -1,3 +1,4 @@
+//src/modules/blogs/blogs.controller.ts
 import type { Request, Response } from "express";
 import { blogsService } from "./blogs.service.js";
 import { sendSuccess } from "../../lib/response.js";

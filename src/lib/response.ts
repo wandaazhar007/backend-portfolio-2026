@@ -1,3 +1,4 @@
+//src/lib/response.ts
 import type { Response } from "express";
 
 export function sendSuccess(res: Response, data: unknown, message = "OK", statusCode = 200) {

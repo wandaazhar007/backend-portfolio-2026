@@ -1,3 +1,4 @@
+//src/middlewares/authMiddleware.ts
 import type { NextFunction, Request, Response } from "express";
 import { auth } from "../config/firebaseAdmin.js";
 import { ApiError } from "../lib/ApiError.js";

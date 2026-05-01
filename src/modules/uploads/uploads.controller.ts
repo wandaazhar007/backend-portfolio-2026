@@ -1,3 +1,4 @@
+//src/modules/uploads/uploads.controller.ts
 import type { Request, Response } from "express";
 import { uploadsService } from "./uploads.service.js";
 import { sendSuccess } from "../../lib/response.js";

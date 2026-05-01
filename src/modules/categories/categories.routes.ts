@@ -1,3 +1,4 @@
+//app/src/modules/categories/categories.routes.ts
 import { Router } from "express";
 import { asyncHandler } from "../../lib/asyncHandler.js";
 import { categoriesController } from "./categories.controller.js";

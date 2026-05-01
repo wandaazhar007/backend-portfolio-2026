@@ -1,3 +1,4 @@
+//src/types/blog.ts
 export interface BlogImage {
   fileName: string;
   path: string;

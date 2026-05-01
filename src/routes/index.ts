@@ -1,3 +1,4 @@
+//src/routes/index.ts
 import { Router } from "express";
 import categoriesRoutes from "../modules/categories/categories.routes.js";
 import worksRoutes from "../modules/works/works.routes.js";

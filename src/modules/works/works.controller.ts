@@ -1,3 +1,4 @@
+//src/modules/works/works.controller.ts
 import type { Request, Response } from "express";
 import { worksService } from "./works.service.js";
 import { sendSuccess } from "../../lib/response.js";

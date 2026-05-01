@@ -1,3 +1,4 @@
+//src/types/work.ts
 export interface WorkImage {
   fileName: string;
   path: string;

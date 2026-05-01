@@ -1,3 +1,4 @@
+//app/src/modules/blogs/blogs.routes.ts
 import { Router } from "express";
 import { asyncHandler } from "../../lib/asyncHandler.js";
 import { blogsController } from "./blogs.controller.js";
